@@ -82,7 +82,7 @@ class Movie(models.Model):
     class Meta:
         verbose_name = 'Фильм'
         verbose_name_plural = 'Фильмы'
-
+        ordering = ['title']
 
 class MovieShots(models.Model):
     # Кадры из фильма
